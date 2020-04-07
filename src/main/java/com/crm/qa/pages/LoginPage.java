@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends TestBase{
 
 	//define all web elements
@@ -27,14 +29,17 @@ public class LoginPage extends TestBase{
 	}
 	
 	//define actions
+	@Step("Step for validate the tittle on Login page")
 	public String validateTheTittle() {
 		return driver.getTitle();
 	}
 	
+	@Step("Step for validate the URL on Login page")
 	public String validateTheURL() {
 		return driver.getCurrentUrl();
 	}
 	
+	@Step("Step for validate the Login functionality")
 	public HomePage login(String un, String pwd) throws IOException, InterruptedException {
 		userNmae.clear();
 		userNmae.sendKeys(un);

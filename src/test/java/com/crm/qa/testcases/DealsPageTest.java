@@ -12,6 +12,10 @@ import com.crm.qa.pages.DealsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class DealsPageTest extends TestBase{
 
 	LoginPage loginPage;
@@ -31,6 +35,8 @@ public class DealsPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Validate the Deals page tittle")
 	public void verifyDealsPageLabelTest() throws IOException {
 		String dealsPageLabel = dealsPage.verfiyDealsLabel();
 		Assert.assertEquals(dealsPageLabel, "Deals");

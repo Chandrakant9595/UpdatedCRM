@@ -1,122 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="16" passed="15">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRM" duration-ms="316314" started-at="2020-03-20T12:00:14 IST" finished-at="2020-03-20T12:05:31 IST">
+  <suite name="Default suite" duration-ms="107284" started-at="2020-04-06T12:07:09 IST" finished-at="2020-04-06T12:08:56 IST">
     <groups>
     </groups>
-    <test name="FreeCRMTest" duration-ms="316314" started-at="2020-03-20T12:00:14 IST" finished-at="2020-03-20T12:05:31 IST">
-      <class name="com.crm.qa.testcases.ContactPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="setUp" is-config="true" duration-ms="14572" started-at="2020-03-20T12:01:45 IST" finished-at="2020-03-20T12:02:00 IST">
+    <test name="Default test" duration-ms="107284" started-at="2020-04-06T12:07:09 IST" finished-at="2020-04-06T12:08:56 IST">
+      <class name="com.crm.qa.testcases.TaskPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="setUp" is-config="true" duration-ms="27518" started-at="2020-04-06T12:07:10 IST" finished-at="2020-04-06T12:07:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactPageLabelTest()[pri:1, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="verifyContactPageLabelTest" duration-ms="179" started-at="2020-03-20T12:02:00 IST" finished-at="2020-03-20T12:02:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactPageLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="tearDown" is-config="true" duration-ms="666" started-at="2020-03-20T12:02:00 IST" finished-at="2020-03-20T12:02:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="setUp" is-config="true" duration-ms="15030" started-at="2020-03-20T12:02:01 IST" finished-at="2020-03-20T12:02:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewContactTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="addNewContactTest" duration-ms="9253" started-at="2020-03-20T12:02:16 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:02:25 IST">
+        <test-method status="FAIL" signature="addnewtaskTest(java.lang.String)[pri:1, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="addnewtaskTest" duration-ms="30818" started-at="2020-04-06T12:07:38 IST" data-provider="getDataFromExcel" finished-at="2020-04-06T12:08:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chandu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Shinde]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[B]]>
+                <![CDATA[Task-1]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="tearDown" is-config="true" duration-ms="633" started-at="2020-03-20T12:02:25 IST" finished-at="2020-03-20T12:02:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="setUp" is-config="true" duration-ms="16788" started-at="2020-03-20T12:02:26 IST" finished-at="2020-03-20T12:02:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewContactTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="addNewContactTest" duration-ms="8136" started-at="2020-03-20T12:02:43 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:02:51 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Amol]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Patil]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[S]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="tearDown" is-config="true" duration-ms="642" started-at="2020-03-20T12:02:51 IST" finished-at="2020-03-20T12:02:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="setUp" is-config="true" duration-ms="15237" started-at="2020-03-20T12:02:52 IST" finished-at="2020-03-20T12:03:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addNewContactTest(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="addNewContactTest" duration-ms="9423" started-at="2020-03-20T12:03:07 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:03:16 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span class="item-text">...</span> is not clickable at point (83, 158). Other element would receive the click: <div class="ui page modals dimmer transition visible active" style="display: flex !important;">...</div>
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'VICKY-PC', ip: '192.168.43.139', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
+System info: host: 'VICKY-PC', ip: '192.168.42.151', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 62ffbdaf7148c088d2b0d91118e0165a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9cefccd11b5e43117449d1fb125ec9f1
+*** Element info: {Using=xpath, value=//input[@name='title']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="item-text">...</span> is not clickable at point (83, 158). Other element would receive the click: <div class="ui page modals dimmer transition visible active" style="display: flex !important;">...</div>
-  (Session info: chrome=80.0.3987.132)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
-System info: host: 'VICKY-PC', ip: '192.168.43.139', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
+System info: host: 'VICKY-PC', ip: '192.168.42.151', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 62ffbdaf7148c088d2b0d91118e0165a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9cefccd11b5e43117449d1fb125ec9f1
+*** Element info: {Using=xpath, value=//input[@name='title']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -127,21 +51,22 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:405)
-at com.sun.proxy.$Proxy17.click(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:418)
-at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at com.crm.qa.pages.HomePage.clickOnContactLink(HomePage.java:37)
-at com.crm.qa.testcases.ContactPageTest.addNewContactTest(ContactPageTest.java:58)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+at com.crm.qa.pages.AddNewTaskPage.addNewTask(AddNewTaskPage.java:27)
+at com.crm.qa.testcases.TaskPageTest.addnewtaskTest(TaskPageTest.java:54)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -172,130 +97,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@f41634]" name="tearDown" is-config="true" duration-ms="648" started-at="2020-03-20T12:03:16 IST" finished-at="2020-03-20T12:03:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="setUp" is-config="true" duration-ms="12916" started-at="2020-03-20T12:01:01 IST" finished-at="2020-03-20T12:01:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePgeTittleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="verifyHomePgeTittleTest" duration-ms="9" started-at="2020-03-20T12:01:14 IST" finished-at="2020-03-20T12:01:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePgeTittleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="tearDown" is-config="true" duration-ms="632" started-at="2020-03-20T12:01:14 IST" finished-at="2020-03-20T12:01:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="setUp" is-config="true" duration-ms="11842" started-at="2020-03-20T12:01:14 IST" finished-at="2020-03-20T12:01:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserNameTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="verifyUserNameTest" duration-ms="1610" started-at="2020-03-20T12:01:26 IST" finished-at="2020-03-20T12:01:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="tearDown" is-config="true" duration-ms="649" started-at="2020-03-20T12:01:28 IST" finished-at="2020-03-20T12:01:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="setUp" is-config="true" duration-ms="13290" started-at="2020-03-20T12:01:28 IST" finished-at="2020-03-20T12:01:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactLinkTest()[pri:3, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="verifyContactLinkTest" duration-ms="2524" started-at="2020-03-20T12:01:42 IST" finished-at="2020-03-20T12:01:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@daef40]" name="tearDown" is-config="true" duration-ms="669" started-at="2020-03-20T12:01:44 IST" finished-at="2020-03-20T12:01:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
-      <class name="com.crm.qa.testcases.DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.DealsPageTest@2b2c86]" name="setUp" is-config="true" duration-ms="17542" started-at="2020-03-20T12:04:23 IST" finished-at="2020-03-20T12:04:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDealsPageLabelTest()[pri:1, instance:com.crm.qa.testcases.DealsPageTest@2b2c86]" name="verifyDealsPageLabelTest" duration-ms="206" started-at="2020-03-20T12:04:40 IST" finished-at="2020-03-20T12:04:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDealsPageLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.DealsPageTest@2b2c86]" name="tearDown" is-config="true" duration-ms="666" started-at="2020-03-20T12:04:41 IST" finished-at="2020-03-20T12:04:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.DealsPageTest -->
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="setUp" is-config="true" duration-ms="15082" started-at="2020-03-20T12:00:14 IST" finished-at="2020-03-20T12:00:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateTheTittleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="validateTheTittleTest" duration-ms="29" started-at="2020-03-20T12:00:29 IST" finished-at="2020-03-20T12:00:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTheTittleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-03-20T12:00:29 IST" finished-at="2020-03-20T12:00:30 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="setUp" is-config="true" duration-ms="16181" started-at="2020-03-20T12:00:30 IST" finished-at="2020-03-20T12:00:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateTheURLTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="validateTheURLTest" duration-ms="16" started-at="2020-03-20T12:00:46 IST" finished-at="2020-03-20T12:00:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTheURLTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="tearDown" is-config="true" duration-ms="823" started-at="2020-03-20T12:00:46 IST" finished-at="2020-03-20T12:00:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="setUp" is-config="true" duration-ms="12033" started-at="2020-03-20T12:00:47 IST" finished-at="2020-03-20T12:00:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="loginTest" duration-ms="981" started-at="2020-03-20T12:00:59 IST" finished-at="2020-03-20T12:01:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@169c6ba]" name="tearDown" is-config="true" duration-ms="635" started-at="2020-03-20T12:01:00 IST" finished-at="2020-03-20T12:01:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
-      <class name="com.crm.qa.testcases.TaskPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="setUp" is-config="true" duration-ms="17384" started-at="2020-03-20T12:04:41 IST" finished-at="2020-03-20T12:04:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addnewtaskTest(java.lang.String)[pri:1, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="addnewtaskTest" duration-ms="6567" started-at="2020-03-20T12:04:59 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:05:05 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Task-1]]>
-              </value>
-            </param>
-          </params>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addnewtaskTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="tearDown" is-config="true" duration-ms="679" started-at="2020-03-20T12:05:05 IST" finished-at="2020-03-20T12:05:06 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="tearDown" is-config="true" duration-ms="1186" started-at="2020-04-06T12:08:09 IST" finished-at="2020-04-06T12:08:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="setUp" is-config="true" duration-ms="17051" started-at="2020-03-20T12:05:06 IST" finished-at="2020-03-20T12:05:23 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="setUp" is-config="true" duration-ms="14429" started-at="2020-04-06T12:08:10 IST" finished-at="2020-04-06T12:08:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addnewtaskTest(java.lang.String)[pri:1, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="addnewtaskTest" duration-ms="6994" started-at="2020-03-20T12:05:23 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:05:30 IST">
+        <test-method status="FAIL" signature="addnewtaskTest(java.lang.String)[pri:1, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="addnewtaskTest" duration-ms="30652" started-at="2020-04-06T12:08:25 IST" data-provider="getDataFromExcel" finished-at="2020-04-06T12:08:55 IST">
           <params>
             <param index="0">
               <value>
@@ -303,66 +117,93 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'VICKY-PC', ip: '192.168.42.151', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7713e891f4f7cbe2c75c466d3ca4c624
+*** Element info: {Using=xpath, value=//input[@name='title']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='title']"}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'VICKY-PC', ip: '192.168.42.151', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vicky\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7713e891f4f7cbe2c75c466d3ca4c624
+*** Element info: {Using=xpath, value=//input[@name='title']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:106)
+at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:195)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+at com.crm.qa.pages.AddNewTaskPage.addNewTask(AddNewTaskPage.java:27)
+at com.crm.qa.testcases.TaskPageTest.addnewtaskTest(TaskPageTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addnewtaskTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@11a67ec]" name="tearDown" is-config="true" duration-ms="663" started-at="2020-03-20T12:05:30 IST" finished-at="2020-03-20T12:05:31 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.TaskPageTest@efcf8a]" name="tearDown" is-config="true" duration-ms="722" started-at="2020-04-06T12:08:55 IST" finished-at="2020-04-06T12:08:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.testcases.TaskPageTest -->
-      <class name="com.crm.qa.testcases.CompaniesPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="setUp" is-config="true" duration-ms="14837" started-at="2020-03-20T12:03:17 IST" finished-at="2020-03-20T12:03:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactPageLabelTest()[pri:1, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="verifyContactPageLabelTest" duration-ms="68" started-at="2020-03-20T12:03:32 IST" finished-at="2020-03-20T12:03:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactPageLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="tearDown" is-config="true" duration-ms="665" started-at="2020-03-20T12:03:32 IST" finished-at="2020-03-20T12:03:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="setUp" is-config="true" duration-ms="15343" started-at="2020-03-20T12:03:33 IST" finished-at="2020-03-20T12:03:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewCompanyTest(java.lang.String)[pri:2, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="addNewCompanyTest" duration-ms="7395" started-at="2020-03-20T12:03:48 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:03:55 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SLK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCompanyTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="tearDown" is-config="true" duration-ms="658" started-at="2020-03-20T12:03:55 IST" finished-at="2020-03-20T12:03:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="setUp" is-config="true" duration-ms="18495" started-at="2020-03-20T12:03:56 IST" finished-at="2020-03-20T12:04:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addNewCompanyTest(java.lang.String)[pri:2, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="addNewCompanyTest" duration-ms="7572" started-at="2020-03-20T12:04:15 IST" data-provider="getDataFromExcel" finished-at="2020-03-20T12:04:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Amazon]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCompanyTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.CompaniesPageTest@1c27452]" name="tearDown" is-config="true" duration-ms="665" started-at="2020-03-20T12:04:22 IST" finished-at="2020-03-20T12:04:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.CompaniesPageTest -->
-    </test> <!-- FreeCRMTest -->
-  </suite> <!-- FreeCRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

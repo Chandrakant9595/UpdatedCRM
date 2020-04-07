@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class ContactsPage extends TestBase{
 	
 	String dName;
@@ -22,10 +24,12 @@ public class ContactsPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@Step("Step for Verify the Contact page label on Contact page")
 	public String verifyContactPageLabel() {
 		return contactPageLabel.getText();
 	}
 
+	@Step("Step for Clicking on New contact button")
 	public AddNewContactPage clickOnNewConatcButton() throws IOException {
 		newButton.click();
 		return new AddNewContactPage(); 

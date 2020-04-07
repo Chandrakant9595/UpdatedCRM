@@ -11,6 +11,10 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class LoginPageTest extends TestBase{
 
 	LoginPage loginPage;
@@ -27,18 +31,24 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority = 1)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the Tittle on Login page")
 	public void validateTheTittleTest() {
 		String tittle =  loginPage.validateTheTittle();
 		Assert.assertEquals(tittle, "Cogmento CRM");
 	}
 	
 	@Test(priority = 2)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the URL of Login page")
 	public void validateTheURLTest() {
 		String url = loginPage.validateTheURL();
 		Assert.assertEquals(url, "https://ui.freecrm.com/");
 	}
 	
 	@Test(priority = 3)
+	@Severity(SeverityLevel.BLOCKER)
+	@Description("Validate the Login functionality")
 	public void loginTest() throws IOException, InterruptedException {
 		homePage =  loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}

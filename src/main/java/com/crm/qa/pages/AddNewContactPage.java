@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.crm.qa.base.TestBase;
 import com.crm.qa.util.TestUtil;
 
+import io.qameta.allure.Step;
+
 public class AddNewContactPage extends TestBase{
 	
 	TestUtil testUtil;
@@ -29,6 +31,7 @@ public class AddNewContactPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
+	@Step("Step for add new Contac")
 	public void addNewContact(String fName, String lName, String mName) {
 		firstName.sendKeys(fName);
 		lastName.sendKeys(lName);

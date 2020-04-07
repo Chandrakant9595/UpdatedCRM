@@ -16,6 +16,10 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class ContactPageTest extends TestBase{
 	
 	LoginPage loginPage;
@@ -39,6 +43,8 @@ public class ContactPageTest extends TestBase{
 	}
 
 	@Test(priority=1)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the lable on Contact page")
 	public void verifyContactPageLabelTest() throws IOException {
 		String contactPageLabel = contactsPage.verifyContactPageLabel();
 		Assert.assertEquals(contactPageLabel, "Contacts");
@@ -51,6 +57,8 @@ public class ContactPageTest extends TestBase{
 	}
 	
 	@Test(priority=2, dataProvider="getDataFromExcel")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Validate the add new Contact test")
 	public void addNewContactTest(String firstName, String lastName, String middleName) throws IOException, InterruptedException {
 		addNewContactPage = contactsPage.clickOnNewConatcButton();
 		addNewContactPage.addNewContact(firstName, lastName, middleName);

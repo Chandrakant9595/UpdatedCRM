@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class TaskPage extends TestBase{
 
 	@FindBy(xpath="//div[@class='item']/a")
@@ -17,6 +19,7 @@ public class TaskPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Step for click on New task Button")
 	public AddNewTaskPage clickOnNewTaskButton() throws IOException {
 		newButton.click();
 		return new AddNewTaskPage();

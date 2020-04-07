@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class AddNewCompanyPage extends TestBase{
 
 	@FindBy(xpath="//input[@name='name']")
@@ -20,6 +22,7 @@ public class AddNewCompanyPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Step for add Company")
 	public void addNewCompany(String cName) {
 		compName.sendKeys(cName);
 		saveButton.click();

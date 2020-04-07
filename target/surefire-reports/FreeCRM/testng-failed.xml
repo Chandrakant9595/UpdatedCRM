@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [FreeCRM]">
+  <listeners>
+    <listener class-name="com.crm.qa.extentReportListener.ExtentReportListenar"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="FreeCRMTest(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.CompaniesPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addNewCompanyTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.CompaniesPageTest -->
+      <class name="com.crm.qa.testcases.TaskPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="addnewtaskTest" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.TaskPageTest -->
+      <class name="com.crm.qa.testcases.ContactPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addNewContactTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
+    </classes>
+  </test> <!-- FreeCRMTest(failed) -->
+</suite> <!-- Failed suite [FreeCRM] -->

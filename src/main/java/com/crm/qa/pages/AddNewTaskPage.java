@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.TestBase;
 
+import io.qameta.allure.Step;
+
 public class AddNewTaskPage extends TestBase{
 
 	@FindBy(xpath="//input[@name='title']")
@@ -20,6 +22,7 @@ public class AddNewTaskPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 
+	@Step("Step for add new Task")
 	public void addNewTask(String tit) {
 		title.sendKeys(tit);
 		saveButton.click();

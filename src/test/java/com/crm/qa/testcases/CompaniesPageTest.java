@@ -15,6 +15,10 @@ import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class CompaniesPageTest extends TestBase{
 
 	LoginPage loginPage;
@@ -37,7 +41,9 @@ public class CompaniesPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
-	public void verifyContactPageLabelTest() throws IOException {
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the label of Company page")
+	public void verifyCompanyPageLabelTest() throws IOException {
 		String companiesPageLabel = comaniesPage.verfiyCompaniesLabel();
 		Assert.assertEquals(companiesPageLabel, "Companies");
 	}
@@ -49,6 +55,8 @@ public class CompaniesPageTest extends TestBase{
 	}
 	
 	@Test(priority=2, dataProvider="getDataFromExcel")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Validate the add new Company functionality")
 	public void addNewCompanyTest(String coName) throws InterruptedException, IOException {
 		addNewCompanyPage = comaniesPage.clickOnNewCompanyButton();
 		addNewCompanyPage.addNewCompany(coName);

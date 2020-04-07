@@ -12,6 +12,10 @@ import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class HomePageTest extends TestBase{
 
 	LoginPage loginPage;
@@ -31,18 +35,24 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the Tittle on Home page")
 	public void verifyHomePgeTittleTest() {
 		String homePageTittle =  homePage.verifyTheTittle();
 		Assert.assertEquals(homePageTittle, "Cogmento CRM", "Home page title not correct");
 	}
 	
 	@Test(priority=2)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the User name on Home page")
 	public void verifyUserNameTest() {
 		String userName =  homePage.verifyUserName();
 		Assert.assertEquals(userName, "Chandrakant Shinde");
 	}
 	
 	@Test(priority=3)
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Validate the Click functionality on Contact link on Home page")
 	public void verifyContactLinkTest() throws IOException {
 		contactsPage = homePage.clickOnContactLink();
 	}

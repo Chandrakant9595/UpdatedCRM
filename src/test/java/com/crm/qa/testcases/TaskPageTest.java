@@ -15,6 +15,10 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.pages.TaskPage;
 import com.crm.qa.util.TestUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+
 public class TaskPageTest extends TestBase{
 
 	LoginPage loginPage;
@@ -43,6 +47,8 @@ public class TaskPageTest extends TestBase{
 	}
 	
 	@Test(priority=1, dataProvider="getDataFromExcel")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Validate the add new Task functionality")
 	public void addnewtaskTest(String title) throws IOException, InterruptedException {
 		addNewTaskPage = taskPage.clickOnNewTaskButton();
 		addNewTaskPage.addNewTask(title);
